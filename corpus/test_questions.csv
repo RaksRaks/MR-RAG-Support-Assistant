@@ -1,0 +1,13 @@
+question_id;question;expected_source_doc;notes;
+Q01;What documents do I need to open a Business Account?;01_account_types_eligibility.md;Also touches FICA doc;
+Q02;How much does a lost debit card replacement cost?;02_fees_and_charges.md;;
+Q03;How long does FICA verification usually take?;03_fica_kyc_requirements.md;;
+Q04;Am I liable for fraud if my card was stolen and I reported it immediately?;04_card_digital_security.md;Overlaps with fraud policy doc;
+Q05;What happens after I report a fraudulent transaction?;05_fraud_dispute_resolution.md;;
+Q06;What is the maximum overdraft limit available?;06_loans_overdraft.md;Answer should note it varies (R1000-R150000);
+Q07;How much money can I send abroad without Reserve Bank approval?;07_forex_international_payments.md;Single Discretionary Allowance = R1 million;
+Q08;How do I escalate a complaint if I am not happy with the outcome?;08_complaints_escalation.md;;
+Q09;Can I ask FNB B4 what personal data they hold about me?;09_data_privacy_popia.md;;
+Q10;Can I do an EFT payment using USSD banking?;10_digital_channels_guide.md;Only to pre-registered beneficiaries;
+Q11;What is FNB B4's stance on cryptocurrency trading accounts?;NONE;Out-of-scope / not covered - answer should be a graceful refusal; not a hallucination
+Q12;What is my current account balance?;NONE;Out-of-scope for a policy-document RAG system - should redirect to app/online banking; not attempt to answer
