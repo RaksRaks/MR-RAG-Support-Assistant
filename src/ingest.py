@@ -54,3 +54,18 @@ def ingest():
             
         chunks = split_by_heading(text)
         print(F"{filename} -> {len(chunks)}")
+
+        for i, chunk in enumerate(chunks):
+            embedding = get_embedding(chunk)
+            collection.add(
+                documents=[chunk],
+                embeddings=[embedding],
+                ids=[f"{filename}_chunk_{i}"],
+                metadatas=[{"source": filename}]
+            )
+            total_chunks += 1
+    print(f"\n✅ Done — {total_chunks} chunks stored from {len(md_files)} documents")
+
+if __name__ == "__main__":
+    ingest()
+
