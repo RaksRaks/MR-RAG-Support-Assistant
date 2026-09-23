@@ -1,34 +1,45 @@
 # test_loop.py — Milestone 1: Single hard-coded proof-of-concept
+# Uses Ollama for embeddings (avoids sentence-transformers DLL issue)
 
-from sentence_transformers import SentenceTransformer
 import chromadb
 import ollama
+
+EMBED_MODEL = "nomic-embed-text" # dedicated embedding model
+CHAT_MODEL  = "llama3:latest"   # used for generation
 
 # ── 1. Load one document ──────────────────────────────────────────────
 doc_path = "corpus/01_account_types_eligibility.md"
 with open(doc_path, "r", encoding="utf-8") as f:
     content = f.read()
 
-# ── 2. Embed and store in Chroma ──────────────────────────────────────
-embedding_model = SentenceTransformer("all-MiniLM-L6-v2")
+print("✓ Document loaded")
 
+# ── 2. Embed the document using Ollama ────────────────────────────────
+def get_embedding(text: str) -> list[float]:
+    response = ollama.embeddings(model=EMBED_MODEL, prompt=text)
+    return response["embedding"]
+
+doc_embedding = get_embedding(content)
+print(f"✓ Document embedded — vector length: {len(doc_embedding)}")
+
+# ── 3. Store in ChromaDB ──────────────────────────────────────────────
 client = chromadb.Client()
 collection = client.get_or_create_collection("test_collection")
 
-# Store the whole doc as one chunk (just for this test)
-embedding = embedding_model.encode(content).tolist()
 collection.add(
     documents=[content],
-    embeddings=[embedding],
+    embeddings=[doc_embedding],
     ids=["doc_01"],
     metadatas=[{"source": "01_account_types_eligibility.md"}]
 )
 
-# ── 3. Ask a hard-coded question ──────────────────────────────────────
+print("✓ Document stored in ChromaDB")
+
+# ── 4. Ask a hard-coded question ──────────────────────────────────────
 question = "What account types are available at FNB?"
 
-# ── 4. Retrieve the most relevant chunk ──────────────────────────────
-question_embedding = embedding_model.encode(question).tolist()
+# ── 5. Embed the question and retrieve the most relevant chunk ────────
+question_embedding = get_embedding(question)
 results = collection.query(
     query_embeddings=[question_embedding],
     n_results=1
@@ -40,7 +51,7 @@ source = results["metadatas"][0][0]["source"]
 print(f"\n--- Retrieved from: {source} ---\n")
 print(retrieved_chunk[:500])  # preview first 500 chars
 
-# ── 5. Generate an answer with Ollama ─────────────────────────────────
+# ── 6. Generate an answer with Ollama ─────────────────────────────────
 system_prompt = """You are a banking support assistant.
 Answer ONLY using the context provided below.
 Always cite the source document filename at the end of your answer.
@@ -54,10 +65,10 @@ Question: {question}
 """
 
 response = ollama.chat(
-    model="llama3.2",
+    model=CHAT_MODEL,
     messages=[
         {"role": "system", "content": system_prompt},
-        {"role": "user", "content": user_message}
+        {"role": "user",   "content": user_message}
     ]
 )
 
