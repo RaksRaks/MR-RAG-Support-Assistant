@@ -1,0 +1,46 @@
+question_id,question,answer,sources_cited,expected_source
+Q01,What documents do I need to open a Business Account?,"To open a Business Account, you will need:
+
+* CIPC company registration documents (or equivalent for close corporations, trusts, and NPOs)
+* Certified ID copies for all directors, trustees, or members holding more than 25% ownership
+* Proof of business address and a resolution authorising the account signatories
+
+These requirements are outlined in the ""Required Documents (Business Entities)"" section.","['03_fica_kyc_requirements.md', '01_account_types_eligibility.md']",01_account_types_eligibility.md
+Q02,How much does a lost debit card replacement cost?,"According to the context, a replacement debit card (lost or damaged) costs R95.00. (Source: Card Fees)","['04_card_digital_security.md', '02_fees_and_charges.md']",02_fees_and_charges.md
+Q03,How long does FICA verification usually take?,"According to the provided context, standard FICA verification is completed within 2 business days of document submission.",['03_fica_kyc_requirements.md'],03_fica_kyc_requirements.md
+Q04,Am I liable for fraud if my card was stolen and I reported it immediately?,"No, you are not liable for fraud if your card was stolen and you reported it immediately. According to the context, ""Customers are not liable for fraud that occurs after a card or account has been correctly reported as lost, stolen, or compromised.""
+
+## Customer Liability; Card Security","['04_card_digital_security.md', '05_fraud_dispute_resolution.md']",04_card_digital_security.md
+Q05,What happens after I report a fraudulent transaction?,"According to the provided documents, reports can be logged via the app's ""Report a Problem"" flow, the fraud call centre, or in branch. However, it doesn't specify what exactly happens after a report is logged.
+
+Since there isn't sufficient information within the context provided, I cannot answer this from the available documents.
+
+Source: Reporting a Fraudulent Transaction","['04_card_digital_security.md', '05_fraud_dispute_resolution.md']",05_fraud_dispute_resolution.md
+Q06,What is the maximum overdraft limit available?,"According to the provided context, the maximum overdraft limit available typically ranges from R1,000 to R150,000. # Loan & Overdraft Facilities — FNB B4 Reference Policy (Synthetic Training Document)","['06_loans_overdraft.md', '01_account_types_eligibility.md']",06_loans_overdraft.md
+Q07,How much money can I send abroad without Reserve Bank approval?,"Each customer has an annual Single Discretionary Allowance (SDA) of R1 million for international transfers without South African Reserve Bank (SARB) approval, in line with exchange control regulations.","['07_forex_international_payments.md', '02_fees_and_charges.md']",07_forex_international_payments.md
+Q08,How do I escalate a complaint if I am not happy with the outcome?,"According to the provided context, you can escalate a complaint that you are not happy with by:
+
+* Escalating via the Complaints & Escalation Process document for fraud-related issues
+* If a team leader, the B4 Client Experience Office
+* After receiving a final response letter, referring the matter to:
+	+ The Ombudsman for Banking Services (for general banking complaints)
+	+ The National Financial Ombud Scheme
+	+ The National Credit Regulator (for credit-related complaints)
+
+Source: ""Complaints & Escalation Process""","['08_complaints_escalation.md', '05_fraud_dispute_resolution.md']",08_complaints_escalation.md
+Q09,Can I ask FNB B4 what personal data they hold about me?,"Yes, you can request access to the personal information FNB B4 holds about you. According to the customer rights section of the document, customers may request access to the personal information FNB B4 holds about them.
+
+[Legal Basis]","['03_fica_kyc_requirements.md', '09_data_privacy_popia.md']",09_data_privacy_popia.md
+Q10,Can I do an EFT payment using USSD banking?,"According to the context, USSD banking supports basic EFT payments to pre-registered beneficiaries only, for security reasons. It does not specify whether it supports general EFT payments or not.
+
+Source: USSD Banking (*120#)","['10_digital_channels_guide.md', '02_fees_and_charges.md']",10_digital_channels_guide.md
+Q11,What is FNB B4's stance on cryptocurrency trading accounts?,"FNB B4 does not offer cryptocurrency trading accounts. The available documents do not mention cryptocurrency or any related services.
+
+## Overview
+(No explicit reference to cryptocurrency, but absence of such service implies no support)
+
+## FX Rates
+(None mentioned)","['07_forex_international_payments.md', '10_digital_channels_guide.md', '01_account_types_eligibility.md']",NONE
+Q12,What is my current account balance?,"You can check your current account balance by using our USSD Banking feature. Simply dial *120# on your phone and follow the prompts to view your available funds.
+
+## USSD Banking (*120#.pdf)","['10_digital_channels_guide.md', '01_account_types_eligibility.md']",NONE
