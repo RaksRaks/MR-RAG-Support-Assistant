@@ -2,7 +2,8 @@ import csv
 from rag import ask
 
 QUESTION_FILE = "corpus/test_questions.csv"
-OUTPUT_FILE = "results_log.csv"
+OUTPUT_FILE = "logs/results_log.csv"
+
 
 def run_tests():
     with open(QUESTION_FILE,encoding='utf-8')as f:
