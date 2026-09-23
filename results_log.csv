@@ -1,46 +1,41 @@
 question_id,question,answer,sources_cited,expected_source
-Q01,What documents do I need to open a Business Account?,"To open a Business Account, you will need:
+Q01,What documents do I need to open a Business Account?,"To open a Business Account, you will need to provide:
 
 * CIPC company registration documents (or equivalent for close corporations, trusts, and NPOs)
 * Certified ID copies for all directors, trustees, or members holding more than 25% ownership
 * Proof of business address and a resolution authorising the account signatories
 
-These requirements are outlined in the ""Required Documents (Business Entities)"" section.","['03_fica_kyc_requirements.md', '01_account_types_eligibility.md']",01_account_types_eligibility.md
-Q02,How much does a lost debit card replacement cost?,"According to the context, a replacement debit card (lost or damaged) costs R95.00. (Source: Card Fees)","['04_card_digital_security.md', '02_fees_and_charges.md']",02_fees_and_charges.md
-Q03,How long does FICA verification usually take?,"According to the provided context, standard FICA verification is completed within 2 business days of document submission.",['03_fica_kyc_requirements.md'],03_fica_kyc_requirements.md
-Q04,Am I liable for fraud if my card was stolen and I reported it immediately?,"No, you are not liable for fraud if your card was stolen and you reported it immediately. According to the context, ""Customers are not liable for fraud that occurs after a card or account has been correctly reported as lost, stolen, or compromised.""
+Additionally, if your application is as a sole proprietor, you may use a personal ID in place of company registration documents.
 
-## Customer Liability; Card Security","['04_card_digital_security.md', '05_fraud_dispute_resolution.md']",04_card_digital_security.md
-Q05,What happens after I report a fraudulent transaction?,"According to the provided documents, reports can be logged via the app's ""Report a Problem"" flow, the fraud call centre, or in branch. However, it doesn't specify what exactly happens after a report is logged.
+(Note: The source document filename is ""## Business Account"" and ""## Required Documents (Business Entities)"")","['03_fica_kyc_requirements.md', '01_account_types_eligibility.md']",01_account_types_eligibility.md
+Q02,How much does a lost debit card replacement cost?,"According to the provided context, a lost or damaged debit card replacement costs R95.00. (## Card Fees)","['04_card_digital_security.md', '02_fees_and_charges.md']",02_fees_and_charges.md
+Q03,How long does FICA verification usually take?,Standard FICA verification is completed within 2 business days of document submission.,['03_fica_kyc_requirements.md'],03_fica_kyc_requirements.md
+Q04,Am I liable for fraud if my card was stolen and I reported it immediately?,"According to our documentation, you are not liable for fraudulent transactions made after a card has been correctly reported as lost, stolen, or compromised, provided reasonable care was taken to protect the card and PIN. Since you reported the theft of your card immediately, you should not be held liable for any subsequent fraud.
 
-Since there isn't sufficient information within the context provided, I cannot answer this from the available documents.
+(Citation: ## Customer Liability, ## Card Security)","['04_card_digital_security.md', '05_fraud_dispute_resolution.md']",04_card_digital_security.md
+Q05,What happens after I report a fraudulent transaction?,"According to the provided context, customers must report suspected fraud within 30 days of the transaction date to qualify for a full investigation under this policy. However, since you specifically asked what happens after reporting a fraudulent transaction, I will refer to the ## Reporting Compromised Accounts section, which mentions that ""See the Fraud & Dispute Resolution Policy document for what happens after a report is logged."" Therefore, I recommend reviewing the Fraud & Dispute Resolution Policy document for more information on the next steps.
 
-Source: Reporting a Fraudulent Transaction","['04_card_digital_security.md', '05_fraud_dispute_resolution.md']",05_fraud_dispute_resolution.md
+Source: fraud_and_dispute_resolution_policy","['04_card_digital_security.md', '05_fraud_dispute_resolution.md']",05_fraud_dispute_resolution.md
 Q06,What is the maximum overdraft limit available?,"According to the provided context, the maximum overdraft limit available typically ranges from R1,000 to R150,000. # Loan & Overdraft Facilities — FNB B4 Reference Policy (Synthetic Training Document)","['06_loans_overdraft.md', '01_account_types_eligibility.md']",06_loans_overdraft.md
-Q07,How much money can I send abroad without Reserve Bank approval?,"Each customer has an annual Single Discretionary Allowance (SDA) of R1 million for international transfers without South African Reserve Bank (SARB) approval, in line with exchange control regulations.","['07_forex_international_payments.md', '02_fees_and_charges.md']",07_forex_international_payments.md
-Q08,How do I escalate a complaint if I am not happy with the outcome?,"According to the provided context, you can escalate a complaint that you are not happy with by:
+Q07,How much money can I send abroad without Reserve Bank approval?,"According to the provided context, each customer has an annual Single Discretionary Allowance (SDA) of R1 million for international transfers without South African Reserve Bank (SARB) approval. Therefore, you can send up to R1 million abroad without Reserve Bank approval.
 
-* Escalating via the Complaints & Escalation Process document for fraud-related issues
-* If a team leader, the B4 Client Experience Office
-* After receiving a final response letter, referring the matter to:
-	+ The Ombudsman for Banking Services (for general banking complaints)
-	+ The National Financial Ombud Scheme
-	+ The National Credit Regulator (for credit-related complaints)
+(Sending Money Abroad##)","['07_forex_international_payments.md', '02_fees_and_charges.md']",07_forex_international_payments.md
+Q08,How do I escalate a complaint if I am not happy with the outcome?,"If you are not satisfied with the outcome, you can escalate the case to a team leader and if necessary, to the B4 Client Experience Office. If unresolved, you will receive a written final response letter within 20 business days of the original complaint.
 
-Source: ""Complaints & Escalation Process""","['08_complaints_escalation.md', '05_fraud_dispute_resolution.md']",08_complaints_escalation.md
-Q09,Can I ask FNB B4 what personal data they hold about me?,"Yes, you can request access to the personal information FNB B4 holds about you. According to the customer rights section of the document, customers may request access to the personal information FNB B4 holds about them.
+Alternatively, if you are unsatisfied with a fraud outcome, you may escalate via the Complaints & Escalation Process document and ultimately to the Ombudsman for Banking Services.
 
-[Legal Basis]","['03_fica_kyc_requirements.md', '09_data_privacy_popia.md']",09_data_privacy_popia.md
-Q10,Can I do an EFT payment using USSD banking?,"According to the context, USSD banking supports basic EFT payments to pre-registered beneficiaries only, for security reasons. It does not specify whether it supports general EFT payments or not.
+Lastly, if you remain unsatisfied after receiving a final response letter (or if 8 weeks have passed without resolution), you can refer the matter to the Ombudsman for Banking Services, the National Financial Ombud Scheme, or the National Credit Regulator. External escalation is free of charge to you.
 
-Source: USSD Banking (*120#)","['10_digital_channels_guide.md', '02_fees_and_charges.md']",10_digital_channels_guide.md
-Q11,What is FNB B4's stance on cryptocurrency trading accounts?,"FNB B4 does not offer cryptocurrency trading accounts. The available documents do not mention cryptocurrency or any related services.
+## B4 Client Experience Office, Complaints & Escalation Process document","['05_fraud_dispute_resolution.md', '08_complaints_escalation.md']",08_complaints_escalation.md
+Q09,Can I ask FNB B4 what personal data they hold about me?,"According to our documentation, customers may request access to the personal information FNB B4 holds about them. You can submit a request to the Information Officer and we will respond to it within 30 days.
 
-## Overview
-(No explicit reference to cryptocurrency, but absence of such service implies no support)
+(Source: ## Customer Rights)","['03_fica_kyc_requirements.md', '09_data_privacy_popia.md']",09_data_privacy_popia.md
+Q10,Can I do an EFT payment using USSD banking?,"According to the provided context, USSD banking supports balance enquiries, airtime purchase, and basic EFT payments to pre-registered beneficiaries only. It does not explicitly state that it doesn't support EFT payments or provide specific details on how to do so.
 
-## FX Rates
-(None mentioned)","['07_forex_international_payments.md', '10_digital_channels_guide.md', '01_account_types_eligibility.md']",NONE
-Q12,What is my current account balance?,"You can check your current account balance by using our USSD Banking feature. Simply dial *120# on your phone and follow the prompts to view your available funds.
+Therefore, I would answer: ""Yes, you can do a basic EFT payment using USSD banking.""
 
-## USSD Banking (*120#.pdf)","['10_digital_channels_guide.md', '01_account_types_eligibility.md']",NONE
+(USSD Banking)","['02_fees_and_charges.md', '10_digital_channels_guide.md']",10_digital_channels_guide.md
+Q11,What is FNB B4's stance on cryptocurrency trading accounts?,I cannot answer this from the available documents.,"['01_account_types_eligibility.md', '07_forex_international_payments.md', '10_digital_channels_guide.md']",NONE
+Q12,What is my current account balance?,"I cannot answer this from the available documents. Please do not share sensitive information like PINs or passwords in chat. For account security help, please call the FNB Raks helpline.
+
+Filename(s): Savings Account, Cheque Account, USSD Banking (*120#)","['01_account_types_eligibility.md', '10_digital_channels_guide.md']",NONE
